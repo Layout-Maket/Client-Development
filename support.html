@@ -15,7 +15,7 @@
                             >Магазин "Продай-Купи"</a
                         >
                     </div>
-                    <p>by Koval Bohdan</p>
+                    <p id="autor-text">by Koval Bohdan</p>
                     <div class="header__top-right">
                         <nav class="header__top-navig">
                             <ul class="header__top-list">
@@ -62,30 +62,24 @@
                 </div>
 
                 <br>
-
-                <table cellspacing="10" cellpadding="10">
-                  <!-- Групування стовпців -->
+                <table class="contact-table">
                   <colgroup>
-                    <col style="background-color: #f2f2f2;">
-                    <col style="background-color: #d9d9d9;">
-                    <col style="background-color: #f2f2f2;">
-                    <col style="background-color: #d9d9d9;">
+                    <col class="column-light">
+                    <col class="column-dark">
+                    <col class="column-light">
+                    <col class="column-dark">
                   </colgroup>
-              
-                  <!-- Заголовки таблиці -->
                   <thead>
                     <tr>
-                      <th colspan="2">Дані</th>
-                      <th colspan="2">Контакти</th>
+                      <th colspan="2" class="contact-header">Дані</th>
+                      <th colspan="2" class="contact-header">Контакти</th>
                     </tr>
                   </thead>
-              
-                  <!-- Тіло таблиці -->
                   <tbody>
                     <tr>
-                      <td rowspan="2">Телефон</td>
-                      <td class="highlight">+380631234567</td>
-                      <td class="highlight">Оператор: Олег</td>
+                      <td rowspan="2" class="contact-label">Телефон</td>
+                      <td class="contact-highlight">+380631234567</td>
+                      <td class="contact-highlight">Оператор: Олег</td>
                       <td>Офлайн</td>
                     </tr>
                     <tr>
@@ -93,26 +87,24 @@
                       <td colspan="2">Оператор: Віктор</td>
                     </tr>
                     <tr>
-                      <td colspan="2">Адреса</td>
+                      <td colspan="2" class="contact-label">Адреса</td>
                       <td>м. Київ вул. Берестейська 123</td>
                       <td>3 поверх</td>
                     </tr>
                     <tr>
-                      <td>Tg:</td>
+                      <td class="contact-label">Tg:</td>
                       <td>@supportProdayCupe</td>
-                      <td rowspan="2">Email:</td>
-                      <td class="highlight">supportProdayCupe@gmail.com</td>
+                      <td rowspan="2" class="contact-label">Email:</td>
+                      <td class="contact-highlight">supportProdayCupe@gmail.com</td>
                     </tr>
                     <tr>
-                      <td>Viber:</td>
+                      <td class="contact-label">Viber:</td>
                       <td>+3805012345678</td>
                       <td>supportProdayCupeOffice@mail.com</td>
                     </tr>
                   </tbody>
                 </table>
-
                 <br>
-
             </div>
         </section>
     </body>

@@ -1,7 +1,43 @@
+/* 1. Налаштування загального стилю для body */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  text-align: justify;
+  background-color: #f4f4f4; /* Додаємо фон */
+}
+
+/* 2. Стиль для заголовків (h1 - h6) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+}
+
+
+/* 3. Оформлення посилань */
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* 5. Внутрішній стиль для абзаців */
+p {
+  font-size: 18px;
+  color: darkblue !important; /* Використання !important */
+}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+#autor-text {
+  font-weight: 700;
 }
 
 .header__top-inner {
@@ -270,4 +306,87 @@ td {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
+}
+
+/* Стилі для нумерованого списку (about__list-ol) */
+.about__list-ol {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+  padding-left: 20px;
+  list-style-type: decimal; /* Числові маркери */
+}
+
+.about__list-ol li {
+  margin-bottom: 5px;
+}
+
+/* Стилі для маркованого списку (about__list-ul) */
+.about__list-ul {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+  padding-left: 20px;
+  list-style-type: square; /* Квадратні маркери */
+}
+
+.about__list-ul li {
+  margin-bottom: 5px;
+}
+
+
+
+/* Основні стилі таблиці */
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+}
+
+.contact-header {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.column-light {
+  background-color: #f2f2f2;
+}
+
+.column-dark {
+  background-color: #d9d9d9;
+}
+
+.contact-label {
+  font-weight: bold;
+  background-color: #e6e6e6;
+  padding: 10px;
+  text-align: left;
+}
+
+.contact-highlight {
+  background-color: #ffeb99;
+  font-weight: bold;
+}
+
+.contact-table td, .contact-table th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.contact-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.contact-table tr:hover {
+  background-color: #ddd;
 }
