@@ -26,7 +26,7 @@ a {
 /* 5. Внутрішній стиль для абзаців */
 p {
   font-size: 18px;
-  color: darkblue !important; /* Використання !important */
+  color: darkblue ; /* Використання !important */
 }
 
 
@@ -61,6 +61,28 @@ p {
   display: flex;
   list-style: none;
   gap: 15px;
+}
+
+/* Lab 4. */
+
+/* Контекстний селектор */
+.header__top-navig a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* Сусідній селектор */
+.header__top-title + p {
+  margin: 0;
+  color: rgb(255, 21, 118);
+}
+
+/* Дочірній селектор */
+.categories__inner > h3 {
+  font-size: 700;
+  font-size: 21px;
+  text-decoration: underline;
 }
 
 .header__top-link {
@@ -389,4 +411,81 @@ td {
 
 .contact-table tr:hover {
   background-color: #ddd;
+}
+
+/* Lab.5 */
+
+/* Контейнер */
+.links-container {
+  width: 100%;
+  overflow: auto;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Загальні стилі для всіх посилань */
+.links-container a {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 8px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  min-width: 180px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.links-container a:link {
+  text-decoration: none;
+}
+
+.links-container a:visited {
+  opacity: 0.95;
+}
+
+.links-container a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.links-container a:active {
+  transform: scale(0.95);
+}
+
+.links-container a:first-child {
+  border: 2px dashed #555;
+  background-color: #3b5998; 
+}
+
+.link-down {
+  color: #fff;
+  background-color: #3498db;
+}
+
+.link-red {
+  color: #fff;
+  background-color: #e74c3c;
+}
+
+.link-green {
+  color: #fff;
+  background-color: #2ecc71;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+i {
+  margin-right: 6px;
 }

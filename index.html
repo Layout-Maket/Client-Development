@@ -6,17 +6,20 @@
         <link rel="stylesheet" href="./style.css" />
         <title>Продай-Купи</title>
         <style lang="">
-            #autor-text {
-              color: rgb(216, 255, 144) !important;
-            }
+          #autor-text {
+            color: rgb(216, 255, 144) !important;
+          }
         </style>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     </head>
     <body>
         <section>
             <div class="container">
                 <div class="header__top-inner">
-                    <div class="header__top-left">
+                    <div class="header__top-left" style="display: flex;">
                       <a href="./index.html" class="header__top-title">Магазин "Продай-Купи"</a>
+                      <p>(c)</p>
                     </div>
                     <p id="autor-text">by Koval Bohdan</p>
                     <div class="header__top-right">
@@ -58,9 +61,19 @@
                         </div>
                     </div>
                 </div>
-                <a href="#tab-2">Вниз</a> <br>
-                <a style="color: red" href="categories.html#item-last"">Перейти до секції 2 на іншій сторінці</a> <br>
-                <a style="color: green" href="https://github.com/bohdan-kov" target="_blank">Перейти на зовнішній сайт</a>
+                <div class="links-container">
+                  <a class="link-down float-left" href="#tab-2">
+                    <i class="fa-solid fa-arrow-down"></i> Вниз
+                  </a>
+                
+                  <a class="link-red float-right" href="categories.html#item-last">
+                    <i class="fa-solid fa-link"></i> Перейти до секції 2
+                  </a>
+                
+                  <a class="link-green float-left" href="https://github.com/bohdan-kov" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                </div>
                 <div class="categories__tabs-contentbox">
                     <div
                         id="tab-1"
