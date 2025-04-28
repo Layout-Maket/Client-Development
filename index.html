@@ -6,8 +6,9 @@
         <link rel="stylesheet" href="./style.css" />
         <title>Продай-Купи</title>
         <style lang="">
-          #autor-text {
+          #btnDevInfo {
             color: rgb(216, 255, 144) !important;
+            cursor: pointer;
           }
         </style>
         <link rel="stylesheet" href="./style.css" />
@@ -18,10 +19,10 @@
             <div class="container">
                 <div class="header__top-inner">
                     <div class="header__top-left" style="display: flex;">
-                      <a href="./index.html" class="header__top-title">Магазин "Продай-Купи"</a>
-                      <p>(c)</p>
+                      <a id="btnAlertDemo" href="./index.html" class="header__top-title">Магазин "Продай-Купи" 👋</a>
+                      <!-- <p>(c)</p> -->
                     </div>
-                    <p id="autor-text">by Koval Bohdan</p>
+                    <p id="btnDevInfo">by Koval Bohdan</p>
                     <div class="header__top-right">
                         <nav class="header__top-navig">
                             <ul class="header__top-list">
@@ -74,6 +75,10 @@
                     <i class="fa-brands fa-github"></i> GitHub
                   </a>
                 </div>
+                <div style="padding: 20px; border: 1px solid #ccc; margin-top: 20px; background-color: #f0f0f0;">
+                  <!-- <button id="btnDialog" style="margin: 5px; padding: 10px;">Почати діалог</button> -->
+                  <button id="btnCompare" style="margin: 5px; padding: 10px;">Порівняти рядки</button>
+                </div>
                 <div class="categories__tabs-contentbox">
                     <div
                         id="tab-1"
@@ -95,7 +100,7 @@
                                 <p class="categories__item-cost">
                                     5600 ₴ <span>1 шт.</span>
                                 </p>
-                                <button class="categories__item-btn">
+                                <button id="btnDialog" class="categories__item-btn">
                                     В кошик
                                 </button>
                             </div>
@@ -116,7 +121,7 @@
                                 <p class="categories__item-cost">
                                     6150 ₴ <span>4 шт.</span>
                                 </p>
-                                <button class="categories__item-btn">
+                                <button id="btnDialog" class="categories__item-btn">
                                     В кошик
                                 </button>
                             </div>
@@ -137,7 +142,7 @@
                                 <p class="categories__item-cost">
                                     2600 ₴ <span>1 шт.</span>
                                 </p>
-                                <button class="categories__item-btn">
+                                <button id="btnDialog" class="categories__item-btn">
                                     В кошик
                                 </button>
                             </div>
@@ -158,7 +163,7 @@
                                 <p class="categories__item-cost">
                                     260 ₴ <span>500 гр</span>
                                 </p>
-                                <button class="categories__item-btn">
+                                <button id="btnDialog" class="categories__item-btn">
                                     В кошик
                                 </button>
                             </div>
@@ -184,7 +189,7 @@
                                 <p class="categories__item-cost">
                                     5600 ₴ <span>1 шт.</span>
                                 </p>
-                                <button class="categories__item-btn">
+                                <button id="btnDialog" class="categories__item-btn">
                                     В кошик
                                 </button>
                             </div>
@@ -205,7 +210,7 @@
                                 <p class="categories__item-cost">
                                     6150 ₴ <span>4 шт.</span>
                                 </p>
-                                <button class="categories__item-btn">
+                                <button id="btnDialog" class="categories__item-btn">
                                     В кошик
                                 </button>
                             </div>
@@ -226,7 +231,7 @@
                                 <p class="categories__item-cost">
                                     2600 ₴ <span>1 шт.</span>
                                 </p>
-                                <button class="categories__item-btn">
+                                <button id="btnDialog" class="categories__item-btn">
                                     В кошик
                                 </button>
                             </div>
@@ -247,7 +252,7 @@
                                 <p class="categories__item-cost">
                                     260 ₴ <span>500 гр</span>
                                 </p>
-                                <button class="categories__item-btn">
+                                <button id="btnDialog" class="categories__item-btn">
                                     В кошик
                                 </button>
                             </div>
@@ -291,5 +296,31 @@
                 <iframe width="1250" height="703" src="https://www.youtube.com/embed/GDlkCkcIqTs" title="Introducing iPhone 16 | Apple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
+        <script>
+          // --- Завдання 1: Функція для демонстрації alert, prompt, confirm ---
+          document.addEventListener('DOMContentLoaded', (event) => {
+            const btnAlertDemo = document.getElementById('btnAlertDemo');
+            if (btnAlertDemo) {
+              btnAlertDemo.addEventListener('click', function() {
+                alert("Привіт! Це демонстрація alert.");
+        
+                let userName = prompt("Будь ласка, введіть ваше ім'я:", "Гість");
+                if (userName !== null && userName !== "") {
+                  alert("Приємно познайомитись, " + userName + "!");
+                } else {
+                  alert("Ви не ввели ім'я або натиснули 'Скасувати'.");
+                }
+        
+                let isConfirmed = confirm("Ви підтверджуєте дію?");
+                if (isConfirmed) {
+                  alert("Дію підтверджено!");
+                } else {
+                  alert("Дію скасовано.");
+                }
+              });
+            }
+          });
+        </script>
     </body>
+    <script src="script.js"></script>
 </html>
