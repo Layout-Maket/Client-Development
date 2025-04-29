@@ -49,9 +49,9 @@ if (firstCategoryItem) {
     resultContainer.innerHTML = `
     <h3>Інші версії:</h3>
     <p><strong>innerHTML:</strong></p>
-    <div style="border:1px dashed #aaa; padding:5px; margin-bottom:10px;">${firstCategoryItem.innerHTML}</div>
+    <div style="padding:5px; margin-bottom:10px;">${firstCategoryItem.innerHTML}</div>
     <p><strong>outerHTML:</strong></p>
-    <div style="border:1px dashed #aaa; padding:5px;">${firstCategoryItem.outerHTML}</div>
+    <div style="padding:5px;">${firstCategoryItem.outerHTML}</div>
     `;
 
     document.body.appendChild(resultContainer);
