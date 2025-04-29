@@ -39,13 +39,25 @@ const firstCategoryItem = categoryItems.length > 0 ? categoryItems[0] : null;
 if (firstCategoryItem) {
     console.log('--- Властивості DOM-вузла (перший елемент категорії) ---');
 
-    // innerHTML: Повертає весь HTML всередині елемента
-    console.log('innerHTML:', firstCategoryItem.innerHTML);
+    const resultContainer = document.createElement('div');
+    resultContainer.style.marginTop = '20px';
+    resultContainer.style.padding = '10px';
+    resultContainer.style.border = '1px solid #ccc';
+    resultContainer.style.backgroundColor = '#f9f9f9';
 
-    // outerHTML: Повертає HTML самого елемента та його вмісту
+
+    resultContainer.innerHTML = `
+    <h3>Інші версії:</h3>
+    <p><strong>innerHTML:</strong></p>
+    <div style="border:1px dashed #aaa; padding:5px; margin-bottom:10px;">${firstCategoryItem.innerHTML}</div>
+    <p><strong>outerHTML:</strong></p>
+    <div style="border:1px dashed #aaa; padding:5px;">${firstCategoryItem.outerHTML}</div>
+    `;
+
+    document.body.appendChild(resultContainer);
+
     console.log('outerHTML:', firstCategoryItem.outerHTML);
 
-    // textContent: Повертає весь текстовий вміст елемента та його нащадків
     console.log('textContent:', firstCategoryItem.textContent.trim().replace(/\s+/g, ' ')); // Очищаємо від зайвих пробілів
 
     // Знайдемо перший текстовий вузол всередині заголовка h6
